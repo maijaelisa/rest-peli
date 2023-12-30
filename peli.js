@@ -15,13 +15,14 @@ const pool = mysql.createPool({
   database: process.env.DB_DATABASE
 });
 
+// localhost:3000 sanoma
 
 app.get('/', (req, res) => {
   res.send('Tervetuloa peliin! Käytä /questions reittiä nähdäksesi kysymykset.');
 });
 
 
-// Määritä REST-endpointit
+// REST-endpointit
 
 
 app.get('/questions', async (req, res) => {
@@ -49,8 +50,6 @@ app.post('/questions', async (req, res) => {
 });
 
 
-
-// Lisää muita endpointteja tarpeen mukaan
 
 // Käynnistä Express-sovellus
 const port = process.env.PORT || 3000;

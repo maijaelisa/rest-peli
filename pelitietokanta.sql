@@ -6,14 +6,20 @@ CREATE DATABASE IF NOT EXISTS pelitietokanta;
 USE pelitietokanta;
 
 -- Luo taulu kysymyksille
-CREATE TABLE IF NOT EXISTS kysymykset (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  kysymysteksti VARCHAR(255) NOT NULL,
-  vastaus VARCHAR(255) NOT NULL
-);
+CREATE TABLE
+    IF NOT EXISTS kysymykset (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        kysymysteksti VARCHAR(255) NOT NULL,
+        vastaus VARCHAR(255) NOT NULL
+    );
 
 -- Lisää esimerkkikysymyksiä
-INSERT INTO kysymykset (kysymysteksti, vastaus) VALUES
-  ('Mikä on Suomen pääkaupunki?', 'Helsinki'),
-  ('Paljon on 2 + 2?', '4'),
-  ('Mikä on suurin planeetta aurinkokunnassamme?', 'Jupiter');
+INSERT INTO
+    kysymykset (kysymysteksti, vastaus)
+VALUES (
+        'Mikä on Suomen pääkaupunki?',
+        'Helsinki'
+    ), ('Paljon on 2 + 2?', '4'), (
+        'Mikä on suurin planeetta aurinkokunnassamme?',
+        'Jupiter'
+    );
