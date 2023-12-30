@@ -15,5 +15,5 @@ CREATE TABLE IF NOT EXISTS kysymykset (
 -- Lisää esimerkkikysymyksiä
 INSERT INTO kysymykset (kysymysteksti, vastaus) VALUES
   ('Mikä on Suomen pääkaupunki?', 'Helsinki'),
-  ('Mikä on 2 + 2?', '4'),
+  ('Paljon on 2 + 2?', '4'),
   ('Mikä on suurin planeetta aurinkokunnassamme?', 'Jupiter');
